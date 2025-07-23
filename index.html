@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imazon - Student Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Razon</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+      <span class="cart">Cart: <span id="cart-count">0</span></span>
+    </nav>
+  </header>
+
+  <section class="search-bar">
+    <input type="text" id="search-input" placeholder="Search products..." />
+    <button onclick="searchProducts()">Search</button>
+  </section>
+
+  <section class="hero">
+    <h1>Welcome to Imazon</h1>
+    <p>Your student-made online store for bike gear!</p>
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="images/bike.jpg" alt="Dirt Bike">
+      <h3>Dirt Bike</h3>
+      <p>Off-road beast with rugged tires</p>
+      <span>Rs 1,89,999</span>
+      <button onclick="addToCart('Dirt Bike', 189999)">Add to Cart</button>
+
+    </div>
+    <div class="product">
+      <img src="images/helmet.jpg" alt="Helmet">
+      <h3>Racing Helmet</h3>
+      <p>Protective and stylish helmet</p>
+      <span>Rs 4,499</span>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/items.jpg" alt="Bike Items">
+      <h3>Bike Tools</h3>
+      <p>All-in-one repair and maintenance kit</p>
+      <span>Rs 1,299</span>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/chain.jpg" alt="Bike Chain">
+      <h3>Heavy Duty Chain</h3>
+      <p>Rust-free durable bike chain</p>
+      <span>Rs 999</span>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/gloves.jpg" alt="Bike Gloves">
+      <h3>Riding Gloves</h3>
+      <p>Grip and comfort while riding</p>
+      <span>Rs 799</span>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/jacket.jpg" alt="Bike Jacket">
+      <h3>Rider Jacket</h3>
+      <p>Weather-resistant rider’s jacket</p>
+      <span>Rs 2,199</span>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Razon. Made by a student 💻</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
